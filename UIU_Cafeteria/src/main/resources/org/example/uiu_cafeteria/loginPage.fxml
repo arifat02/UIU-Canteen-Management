@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="bodybg" stylesheets="@Style/style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.uiu_cafeteria.LoginPage">
+   <children>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" stylesheets="@Style/style.css" StackPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" layoutY="-2.6666666666666665" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" text="UIU" textFill="#eb5a06" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0">
+               <font>
+                  <Font name="System Bold" size="76.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutY="85.33333333333333" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" text="CAFETERIA" textFill="#eb5a06" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="85.0">
+               <font>
+                  <Font name="Bell MT" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="loginPane" cacheShape="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@Style/style.css" visible="false">
+         <children>
+
+            <AnchorPane cacheShape="false" layoutX="310.0" layoutY="116.0" prefHeight="450.0" prefWidth="380.0" styleClass="Pane" stylesheets="@Style/style.css" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="310.0" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="116.0">
+               <children>
+                  <TextField fx:id="userNameField" layoutX="44.0" layoutY="144.0" prefHeight="40.0" prefWidth="251.0" promptText="Enter your username" styleClass="textArea" stylesheets="@Style/style.css" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="41.333333333333314" />
+                  <PasswordField fx:id="passwordField" layoutX="43.0" layoutY="196.0" prefHeight="40.0" prefWidth="251.0" promptText="Enter your Password" styleClass="textArea" stylesheets="@Style/style.css" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="42.333333333333314" />
+                  <Button fx:id="LogInBtn" layoutX="43.0" layoutY="256.0" mnemonicParsing="false" onAction="#ClickLoginBtn" prefHeight="27.0" prefWidth="250.0" styleClass="Btn" stylesheets="@Style/style.css" text="LOG IN" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="42.333333333333314" />
+                  <Label layoutX="102.0" layoutY="415.0" stylesheets="@Style/style.css" text="Don't have an account?" />
+                  <Hyperlink fx:id="ResetPass" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="295.0" onAction="#ClickForgotPass" prefHeight="24.0" prefWidth="335.0" styleClass="reset" stylesheets="@Style/style.css" text="Forgot Password?" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-0.33333333333337123">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink fx:id="Register" layoutX="226.0" layoutY="412.0" onAction="#RegisterBtn" styleClass="reset" stylesheets="@Style/style.css" text="Register">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label alignment="CENTER" layoutY="54.0" prefHeight="48.0" prefWidth="320.0" text="Login" textFill="#312a2a" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Berlin Sans FB" size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="admin" layoutX="842.0" layoutY="552.0" mnemonicParsing="false" onAction="#adminBtn" prefHeight="27.0" prefWidth="136.0" styleClass="Btn" stylesheets="@Style/style.css" text="Admin Login" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="createAccountPane" cacheShape="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@Style/style.css" visible="false">
+         <children>
+            <AnchorPane cacheShape="false" layoutX="310.0" layoutY="116.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="450.0" prefWidth="380.0" styleClass="Pane" stylesheets="@Style/style.css" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="310.0" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="116.0">
+               <children>
+                  <Label layoutX="98.0" layoutY="415.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" stylesheets="@Style/style.css" text="Already have an account?" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="146.66666666666666" />
+                  <Label alignment="CENTER" layoutY="53.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="48.0" prefWidth="320.0" text="Creat Your Account" textFill="#312a2a" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.6666666666666856">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="35.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="setUserNameField" layoutX="61.0" layoutY="125.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="295.0" promptText="Username" styleClass="textArea" stylesheets="@Style/style.css" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="24.333333333333314" />
+                  <TextField fx:id="numberField" layoutX="61.0" layoutY="166.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="295.0" promptText="Mobile " styleClass="textArea" stylesheets="@Style/style.css" />
+                  <TextField fx:id="emailField" layoutX="61.0" layoutY="207.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="295.0" promptText="Email" styleClass="textArea" stylesheets="@Style/style.css" />
+                  <PasswordField fx:id="setPasswordField" layoutX="62.0" layoutY="248.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="295.0" promptText="Password" styleClass="textArea" stylesheets="@Style/style.css" />
+                  <DatePicker fx:id="birthdate" layoutX="31.0" layoutY="304.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="327.0" promptText="Bate of Birth" />
+                  <Button layoutX="45.0" layoutY="368.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClickCreatBtn" prefHeight="27.0" prefWidth="250.0" styleClass="Btn" stylesheets="@Style/style.css" text="Create Account" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="41.0" />
+                  <Hyperlink layoutX="233.0" layoutY="412.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#ClickBackbtn" prefHeight="10.0" prefWidth="20.0" styleClass="reset" stylesheets="@Style/style.css" text="Log In" AnchorPane.leftAnchor="233.0" AnchorPane.rightAnchor="103.33333333333331">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Hyperlink>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="30.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Style/user.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="30.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Style/159832.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="22.0" fitWidth="23.0" layoutX="30.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Style/646094.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="30.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Style/807369.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="resetPassPane" cacheShape="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@Style/style.css" visible="false">
+         <children>
+            <AnchorPane cacheShape="false" layoutX="310.0" layoutY="116.0" prefHeight="450.0" prefWidth="380.0" styleClass="Pane" stylesheets="@Style/style.css" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="310.0" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="116.0">
+               <children>
+                  <Label alignment="CENTER" layoutY="53.0" prefHeight="48.0" prefWidth="320.0" text="Reset Password" textFill="#312a2a" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="35.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="EmailToUpdatePass" layoutX="43.333333333333336" layoutY="144.0" prefHeight="40.0" prefWidth="251.0" promptText="Email" styleClass="textArea" stylesheets="@Style/style.css" AnchorPane.leftAnchor="43.333333333333336" AnchorPane.rightAnchor="42.0" />
+                  <TextField fx:id="NewPassField" layoutX="43.0" layoutY="196.0" prefHeight="40.0" prefWidth="295.0" promptText="New password" styleClass="textArea" stylesheets="@Style/style.css" />
+                  <Button fx:id="updatePassbtn" layoutX="43.0" layoutY="257.0" mnemonicParsing="false" onAction="#ClickUpdatePassbtn" prefHeight="27.0" prefWidth="250.0" styleClass="Btn" stylesheets="@Style/style.css" text="Confirm" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="42.333333333333314" />
+                  <Button layoutX="43.0" layoutY="379.0" mnemonicParsing="false" onAction="#ClickBackbtn" prefHeight="27.0" prefWidth="294.0" styleClass="Btn" stylesheets="@Style/style.css" text="Back" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="adminLoginPane" cacheShape="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@Style/style.css">
+         <children>
+            <AnchorPane cacheShape="false" layoutX="310.0" layoutY="116.0" prefHeight="450.0" prefWidth="380.0" styleClass="Pane" stylesheets="@Style/style.css" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="310.0" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="116.0">
+               <children>
+                  <TextField fx:id="EmailToUpdatePass1" layoutX="43.333333333333336" layoutY="144.0" prefHeight="40.0" prefWidth="251.0" promptText="Enter your username" styleClass="textArea" stylesheets="@Style/style.css" AnchorPane.leftAnchor="43.333333333333336" AnchorPane.rightAnchor="42.0" />
+                  <Button fx:id="adminLogin" layoutX="43.0" layoutY="257.0" mnemonicParsing="false" onAction="#adminLoginBtn" prefHeight="27.0" prefWidth="250.0" styleClass="Btn" stylesheets="@Style/style.css" text="Confirm" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="42.333333333333314" />
+                  <Label alignment="CENTER" layoutY="53.0" prefHeight="48.0" prefWidth="320.0" text="Login as admin" textFill="#312a2a" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="35.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="43.0" layoutY="379.0" mnemonicParsing="false" onAction="#ClickBackbtn" prefHeight="27.0" prefWidth="294.0" styleClass="Btn" stylesheets="@Style/style.css" text="Back" />
+                  <PasswordField fx:id="passwordField1" layoutX="43.0" layoutY="196.0" prefHeight="40.0" prefWidth="294.0" promptText="Enter your password" styleClass="textArea" stylesheets="@Style/style.css" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

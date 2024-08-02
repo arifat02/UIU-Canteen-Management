@@ -1,0 +1,28 @@
+.sidePane{
+     -fx-background-color: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(245, 245, 245, 1));
+       -fx-border-color: transparent;
+       -fx-border-width: 1px;
+       -fx-background-radius: 8px; /* Slightly more rounded corners for a modern look */
+       -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 12, 0.0, 0, 4);
+  }
+.bgPane{
+  -fx-background-colour: rgb(238, 241, 246);
+  }
+.sidePaneButton {
+  -fx-background-color: white; /* Default button color */
+  -fx-font-size: 12px;
+    -fx-alignment: center-left; /* Align text to the left */
+    -fx-font-family: 'Lato';
+  -fx-cursor: hand; /* Change cursor to hand pointer on hover */
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.0, 0, 1); /* Subtle shadow */
+  -fx-transition: background-color 0.3s, box-shadow 0.3s, text-fill 0.3s, border-color 0.3s; /* Smooth transitions */
+}
+
+.sidePaneButton:hover {
+  -fx-background-color: rgb(239, 239, 239); /* Button color on hover */
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 3); /* Elevated shadow on hover */
+}
+
+.sidePaneButton:pressed {
+  -fx-background-color: rgb(169, 214, 252); /* Darker shade when pressed */
+}

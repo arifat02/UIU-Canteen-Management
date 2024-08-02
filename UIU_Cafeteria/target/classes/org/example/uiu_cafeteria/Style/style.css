@@ -1,0 +1,41 @@
+.bodybg{
+     -fx-background-image: url('Untitled.png');
+     -fx-background-size: 100% 100%;
+  }
+  .Pane{
+        -fx-background-color: rgba(255,255,255, 0.80); /* Transparent orange color with 20% opacity */
+       -fx-background-radius: 10px;
+    }
+    .label{
+        -fx-font-family: "Copperplate";
+}
+.textArea{
+      -fx-background-color: transparent; /* Transparent background */
+          -fx-border-color: transparent transparent #000000 transparent; /* Bottom border color */
+          -fx-border-width: 0 0 1 0; /* Bottom border width */
+        -fx-prompt-text-fill: black;
+
+    }
+.AdminBtn {
+          -fx-background-color: rgba(253, 126, 20, 0.80);
+                -fx-border-color: rgba(253, 126, 20, 0.80);
+          -fx-border-radius: 24px;
+          -fx-background-radius: 24px;
+          -fx-font-size: 10px;
+          -fx-text-fill: #000000;
+          -fx-cursor: hand;
+          }
+.Btn {
+    -fx-background-color: linear-gradient(to right, #f05635, #ea6031, #e4692f, #de712e, #d8782f);
+                -fx-text-fill: #ffffff;
+                -fx-cursor: hand;
+          }
+.Btn:hover {
+
+        -fx-border-color: rgba(0, 0, 0, 0.19);
+    }
+
+.Btn:pressed {
+        -fx-background-color: #c86100;
+        -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 0, 0, 1);
+    }
